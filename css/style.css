@@ -1,0 +1,119 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+section
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.attribution {
+    padding: 24px;
+    font-size: 12px;
+    text-align: center;
+    color: inherit;
+}
+
+body {
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: var(--bgColor);
+    color: var(--textColor);
+
+}
+
+:root {
+    --bgColor: #ECF2F8;
+    --textColor: #fff;
+    --violet:#733FC8;
+    --darkGrayishBlue:#48556a;
+    --darkBlackishBlue:#19212e;
+    --lightGrey: #cfcfcf;
+    --white: #fff;
+}
+
+.container {
+    background-color: var(--bgColor);
+    max-width: 327px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    
+
+    @media screen and (min-width:768px) {
+        max-width: 384px;
+        padding: 40px;
+        margin: 174px auto;
+    }
+}
+
+.testimonials {
+display: flex;
+flex-direction: column;
+}
+
+
+.testimonial {
+padding: 26px 32px 32px 32px;
+border-radius: 8px;
+box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+
+}
+
+.testimonial:not(:last-child){
+    margin-bottom: 24px;
+}
+
+.testimonial--violet {
+background-color: var(--violet);
+}
+.testimonial--darkGrey{
+    background-color: var(--darkGrayishBlue);
+}
+.testimonial--white{
+    background-color: var(--white);
+}
+.testimonial--black{
+background-color: var(--darkBlackishBlue);
+}
+
+
+.testimonial__heading {
+
+}
+
+.heading__portrait {}
+
+.heading__name {}
+
+.heading__status {}
+
+.testimonial__title {}
+
+.testimonial__quotation {}
