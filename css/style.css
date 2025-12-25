@@ -44,6 +44,11 @@ body {
   font-style: normal;
   background-color: var(--bgColor);
   color: var(--textColor);
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 :root {
@@ -65,11 +70,17 @@ body {
   @media screen and (min-width: 768px) {
     max-width: 660px;
     margin: auto;
+      /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
   }
 
   @media screen and (min-width: 1440px) {
     max-width: 1110px;
     margin: auto;
+  
+
   }
 }
 
@@ -79,6 +90,7 @@ body {
   margin-top: 36px;
 
   @media screen and (min-width: 768px) {
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
